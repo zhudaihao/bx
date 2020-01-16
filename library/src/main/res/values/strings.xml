@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">共信赢保险</string>
+    <string name="refresh_down_text">下拉可刷新</string>
+    <string name="refresh_release_text">松开可刷新</string>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="16sp"
+            tools:text="" />
+
+        <TextView
+            android:id="@+id/tv_player"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="25dp"
+            android:paddingRight="15dp"
+            android:textSize="14sp"
+            android:visibility="visible"
+            tools:text="" />
+
+    </RelativeLayout>
+
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout
+        android:id="@+id/bga_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_title">
+
+        <!--  高设置包裹不显示上拉加载图标  android:layout_width="match_parent"
+         android:layout_height="wrap_content"-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fadingEdge="none" />
+
+
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+    <include layout="@layout/error_view" />
+
+
+</RelativeLayout>

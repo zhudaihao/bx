@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_tag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_shape"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px44"
+                android:text="我的竞猜"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_content_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px20"
+                android:layout_marginTop="@dimen/px15"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                tools:tetx="标题" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_tag2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/ll_title"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bottom_shape"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_commit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/commit_shape"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="10dp"
+                android:text="我知道了"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_marginLeft="@dimen/px30"
+                android:layout_marginRight="@dimen/px30"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/tv_commit"
+                android:fadingEdge="none" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_tag2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/back"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

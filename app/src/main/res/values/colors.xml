@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#999999</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+    <color name="home_tab_back">#FFFFFF</color>
+
+    <color name="tab_indicator">#AAAAAA</color>
+    <color name="tab_title_text">#191919</color>
+    <color name="tab_selected_text">#eac360</color>
+    <color name="tab_line">#aca9a9</color>
+
+    <color name="text_color">#333333</color>
+
+
+
+
+    <color name="colorProgressGradientStart">#f75acb</color>
+    <color name="colorProgressGradientEnd">#1ae8ff</color>
+
+    <color name="translucence_color">#30000000</color>
+    <color name="title_top">#666666</color>
+</resources>

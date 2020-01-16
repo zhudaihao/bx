@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="border_thickness">3dp</dimen>
+    <dimen name="corner_thickness">5dp</dimen>
+    <dimen name="guideline_thickness">1px</dimen>
+
+    <dimen name="target_radius">24dp</dimen>
+    <dimen name="snap_radius">3dp</dimen>
+    <dimen name="corner_length">20dp</dimen>
+    <dimen name="key_height">50dip</dimen>
+    <dimen name="candidate_font_height">16sp</dimen>
+    <dimen name="candidate_vertical_padding">6sp</dimen>
+
+
+
+
+    <dimen name="px1">1px</dimen>
+    <dimen name="px3">3px</dimen>
+    <dimen name="px4">4px</dimen>
+    <dimen name="px5">5px</dimen>
+    <dimen name="px8">8px</dimen>
+    <dimen name="px10">10px</dimen>
+    <dimen name="px15">15px</dimen>
+    <dimen name="px12">12px</dimen>
+    <dimen name="px14">14px</dimen>
+    <dimen name="px16">16px</dimen>
+    <dimen name="px18">18px</dimen>
+    <dimen name="px20">20px</dimen>
+    <dimen name="px21">21px</dimen>
+    <dimen name="px22">22px</dimen>
+    <dimen name="px23">23px</dimen>
+    <dimen name="px24">24px</dimen>
+    <dimen name="px25">25px</dimen>
+    <dimen name="px26">26px</dimen>
+    <dimen name="px27">27px</dimen>
+    <dimen name="px28">28px</dimen>
+    <dimen name="px30">30px</dimen>
+    <dimen name="px34">34px</dimen>
+    <dimen name="px36">36px</dimen>
+    <dimen name="px40">40px</dimen>
+    <dimen name="px44">44px</dimen>
+    <dimen name="px45">45px</dimen>
+    <dimen name="px46">46px</dimen>
+    <dimen name="px48">48px</dimen>
+    <dimen name="px50">50px</dimen>
+    <dimen name="px60">60px</dimen>
+    <dimen name="px70">70px</dimen>
+    <dimen name="px72">72px</dimen>
+    <dimen name="px80">80px</dimen>
+    <dimen name="px86">86px</dimen>
+    <dimen name="px32">32px</dimen>
+    <dimen name="px90">90px</dimen>
+    <dimen name="px91">91px</dimen>
+    <dimen name="px100">100px</dimen>
+    <dimen name="px110">110px</dimen>
+    <dimen name="px120">120px</dimen>
+    <dimen name="px130">130px</dimen>
+    <dimen name="px136">136px</dimen>
+    <dimen name="px137">137px</dimen>
+    <dimen name="px150">150px</dimen>
+    <dimen name="px156">156px</dimen>
+    <dimen name="px160">160px</dimen>
+    <dimen name="px168">168px</dimen>
+    <dimen name="px180">180px</dimen>
+    <dimen name="px52">52px</dimen>
+    <dimen name="px200">200px</dimen>
+    <dimen name="px250">250px</dimen>
+    <dimen name="px300">300px</dimen>
+    <dimen name="px360">360px</dimen>
+    <dimen name="px400">400px</dimen>
+
+    <dimen name="sp10">10sp</dimen>
+    <dimen name="sp11">11sp</dimen>
+    <dimen name="sp12">12sp</dimen>
+    <dimen name="sp13">13sp</dimen>
+    <dimen name="sp14">14sp</dimen>
+    <dimen name="sp15">15sp</dimen>
+    <dimen name="sp16">16sp</dimen>
+    <dimen name="sp18">18sp</dimen>
+
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="dp30">30dp</dimen>
+    <dimen name="dp40">40dp</dimen>
+    <dimen name="dp50">50dp</dimen>
+</resources>

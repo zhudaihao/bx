@@ -1,0 +1,73 @@
+apply plugin: 'com.android.library'
+/*小刀注解*/
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "27.0.0"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.0.0'
+    testCompile 'junit:junit:4.12'
+    //小刀注解
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    //数据解析
+    compile 'com.alibaba:fastjson:1.1.68.android'
+    compile 'com.google.code.gson:gson:2.8.4'
+    //通过recyclerview这个控件实现ListView,GirdView，瀑布流等效果
+    compile 'com.android.support:recyclerview-v7:26.0.0'
+    //权限管理
+    compile 'com.yanzhenjie:permission:1.0.4'
+    //网络框架
+    compile 'com.yolanda.nohttp:nohttp:1.1.0'
+    //屏幕适配 1
+    compile 'com.zhy:autolayout:1.4.5'
+    //图片加载框架
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    /*SImageView控件图片处理*/
+    compile 'com.szysky.customize:simageview:2.2'
+    //配合glide的圆角图片
+    compile 'com.github.open-android:Glide-transformations:0.1.0'
+    //下拉刷新上拉加载
+    compile 'cn.bingoogolapple:bga-refreshlayout:1.1.6'
+    //recycleView 适配器(需要在工程的build添加依赖)
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
+    //需要在项目build加载依赖
+    //design 效果
+    compile 'com.android.support:design:26.0.0'
+    //内存泄露检查
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+    //第三方webView
+    compile 'com.just.agentweb:agentweb:2.0.0'
+    //按钮页面跳转过度动画
+    compile project(path: ':circularanim')
+    //打印日记
+    compile 'com.orhanobut:logger:2.1.1'
+
+}

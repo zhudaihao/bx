@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#6000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="50dp"
+        android:background="@drawable/dialog_shape"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="网络环境"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="测试"
+            android:textColor="@android:color/holo_blue_bright" />
+
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="验收"
+            android:textColor="@android:color/holo_blue_bright" />
+
+        <Button
+            android:id="@+id/bt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="线上"
+            android:textColor="@android:color/holo_blue_bright" />
+
+        <Button
+            android:id="@+id/bt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="本地1"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <Button
+            android:id="@+id/bt5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="本地2"
+            android:textColor="@android:color/holo_blue_dark" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

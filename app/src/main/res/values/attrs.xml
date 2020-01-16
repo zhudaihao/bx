@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ForegroundImageView">
+        <attr name="android:foreground" />
+    </declare-styleable>
+
+    <attr name="aspect" />
+
+    <declare-styleable name="CustomSlidingTabIndicator">
+        <attr name="STIindicatorColor" format="color" />
+        <attr name="STIunderlineColor" format="color" />
+        <attr name="STIdividerColor" format="color" />
+        <attr name="STItextColor" format="color" />
+        <attr name="STIindicatorHeight" format="dimension" />
+        <attr name="STIunderlineHeight" format="dimension" />
+        <attr name="STIdividersPadding" format="dimension" />
+        <attr name="STItabLeftRightPadding" format="dimension" />
+        <attr name="STIscrollOffSet" format="dimension" />
+        <attr name="STItabTextSize" format="dimension" />
+        <attr name="STItabBackground" format="reference" />
+        <attr name="STIshouldExpand" format="boolean" />
+        <attr name="STItextCaps" format="boolean" />
+        <attr name="STItabTopBtmPadding" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SlidingTabLayout">
+        <attr name="indicatorColor" format="color" />
+        <attr name="shouldExpand" format="boolean" />
+        <attr name="slidingTabView" format="reference" />
+        <attr name="slidingTabTextViewId" format="reference" />
+    </declare-styleable>
+
+
+
+
+
+
+    <declare-styleable name="SwitchButton">
+        <attr name="misOpened" format="boolean" />
+        <attr name="mbutton" format="reference" />
+        <attr name="mbackground" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CoolIndicator">
+        <attr name="wrapShiftDrawable" format="boolean"/>
+        <attr name="shiftDuration" format="reference"/>
+        <attr name="shiftInterpolator" format="reference"/>
+    </declare-styleable>
+</resources>

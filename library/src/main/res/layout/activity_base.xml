@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_base_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:visibility="visible">
+
+
+        <RadioButton
+            android:id="@+id/rb_base_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:drawableLeft="@mipmap/back"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="50dp"
+            android:textSize="@dimen/sp16"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="30dp"
+            android:singleLine="true"
+            android:id="@+id/tv_base_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#333333"
+            android:textSize="17sp"
+            tools:text="标题" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_base_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+</LinearLayout>

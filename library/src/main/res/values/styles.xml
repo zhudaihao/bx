@@ -1,0 +1,150 @@
+<resources>
+
+    <!-- Base application theme. -->
+    //NoActionBar页面不要title
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar"><!--parent继承某个局主题，相当继承关系-->
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark
+        </item><!--colorPrimaryDark：主色;深色，一般可以用于状态栏颜色、底部导航栏-->
+        <item name="colorPrimary">@color/colorPrimary</item><!--colorPrimary：主色，title背景颜色-->
+        <item name="colorAccent">@color/colorAccent
+        </item><!--colorAccent：（代表各个空间的基调颜色，editText光标，下划线颜色，CheckBox、RadioButton、ProgressBar等等）-->
+        <item name="android:textColor">@color/black
+        </item><!--"android:textColor"：当前所有的文本颜色,某些控件里面字体颜色不一定改变比如editText，ActionBar-->
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item><!--title下面的背景颜色-->
+    </style>
+
+
+    <style name="StarterStyle" parent="AppTheme">
+        <item name="colorAccent">@color/color_g</item>
+    </style>
+
+
+    <!--tabLayout-->
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="MainTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/color_00</item>//设置最顶栏背景颜色
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+    </style>
+
+
+    <!--全屏设置+其他系统样式-->
+    <style name="WelcomeActivityStyle" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <!--设置没有title-->
+    <style name="CursorDialogThemeNotTitle">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <!--窗口+不是浮动+有title  仿IOS对话框效果-->
+    <style name="CursorDialogNotFloatTheme">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!--全屏+不是浮动+有title-->
+    <style name="CursorDialogFullTheme" parent="CursorDialogNotFloatTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <!--没有title+不是浮动+背景和窗体颜色透明-->
+    <style name="CursorDialogNotFloatNotTitleTheme" parent="CursorDialogThemeNotTitle">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!--没有title+全屏-->
+    <style name="CursorDialogNotTitleFullTheme" parent="CursorDialogNotFloatNotTitleTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <style name="text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">21dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+
+
+
+    <style name="button_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/px32</item>
+        <item name="android:layout_marginRight">@dimen/px32</item>
+        <item name="android:paddingTop">@dimen/px32</item>
+        <item name="android:paddingBottom">@dimen/px20</item>
+        <item name="android:layout_marginTop">@dimen/px60</item>
+        <item name="android:layout_marginBottom">@dimen/px60</item>
+        <item name="android:textSize">@dimen/sp16</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/bt_circle</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+
+    <style name="EditText_login_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:textColor">@color/color_b4</item>
+        <item name="android:textColorHint">@color/color_55</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+
+    <style name="EditText_register_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/px100</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/px30</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textSize">@dimen/sp14</item>
+        <item name="android:textColor">@color/color_b4</item>
+        <item name="android:textColorHint">@color/color_55</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginRight">@dimen/px10</item>
+        <item name="android:inputType">number</item>
+        <item name="android:typeface">normal</item>
+
+    </style>
+
+
+    <style name="ivBack_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:paddingBottom">@dimen/px30</item>
+        <item name="android:paddingLeft">@dimen/px30</item>
+        <item name="android:paddingRight">@dimen/px120</item>
+        <item name="android:paddingTop">@dimen/px30</item>
+        <item name="android:src">@mipmap/back</item>
+    </style>
+
+
+</resources>

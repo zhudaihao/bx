@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.youth.banner.Banner
+        android:id="@+id/bannerViewPager_home"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="15dp"
+        app:image_scale_type="fit_xy"
+        app:indicator_drawable_selected="@drawable/shape_banner"
+        app:indicator_drawable_unselected="@drawable/shape_un_banner"
+        app:title_textsize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="25dp"
+        android:textColor="@color/text_color"
+        android:paddingBottom="11dp"
+        android:text="热门产品"
+        android:textSize="18sp" />
+
+
+</LinearLayout>
